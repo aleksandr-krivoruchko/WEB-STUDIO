@@ -1,0 +1,25 @@
+.features {
+  padding-bottom: 47px;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__thumb {
+  @extend %flex-center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features__item:not(:last-child) {
+  margin-right: $card-set-gap;
+}
+
+.features__text {
+  @include text;
+}

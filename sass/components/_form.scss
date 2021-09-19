@@ -1,0 +1,83 @@
+.form {
+  width: 448px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+.form__title {
+  @include text(700, 20px, 1.15, 0.03em, $title-text-color);
+  margin-bottom: 10px;
+}
+
+.form__field {
+  @include trans(fill);
+  width: 448px;
+  margin-bottom: 10px;
+  position: relative;
+  &:focus-within {
+    fill: $accent-color;
+  }
+}
+
+.form__label {
+  @include text(400, 12px, 1.17, 0.01em, $main-text-color);
+  margin-bottom: 4px;
+}
+
+.form__input {
+  @include input;
+  padding-left: 42px;
+}
+
+.form__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+
+.form__textarea {
+  @include input(120px);
+  padding: 12px 16px;
+  resize: none;
+  &::placeholder {
+    @include text(400, 12px, 1.17, 0.01em, rgba(117, 117, 117, 0.5));
+  }
+}
+
+/**      CHECKBOX       */
+
+.form__checkbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form__label--check {
+  @include text(400, 12px, 1.71, 0.03em, $main-text-color);
+  padding-left: 36px;
+}
+
+.form__icon-check {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 3px;
+
+  .form__input--check:checked + & {
+    background-color: $accent-color;
+    border: none;
+  }
+}
+
+.form__link {
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+}
