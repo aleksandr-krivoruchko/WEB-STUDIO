@@ -1,6 +1,11 @@
 .footer__subscription {
-  margin-left: auto;
-  padding-top: 12px;
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .subscription__text {
@@ -10,19 +15,30 @@
 
 .subscription__form {
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    width: 570px;
+  }
 }
 
 .subscription__input {
   @include trans(border-color);
-  width: 358px;
+  width: 100%;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   border-radius: 4px;
   background: transparent;
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
+
   &:focus {
     border-color: #ffffff;
     outline: none;

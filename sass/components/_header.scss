@@ -4,8 +4,16 @@
 
 .header__main-nav {
   @extend %flex-center;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
 }
 
 .header__site-nav {
   @extend %flex-center;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
 }

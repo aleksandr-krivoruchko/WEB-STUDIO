@@ -1,11 +1,30 @@
-.footer__container {
-  display: flex;
-}
-
 .footer {
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $accent-bg-color;
+}
+
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.address {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-left: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-left: 0;
+    text-align: left;
+  }
 }
 
 .address__item {
@@ -20,8 +39,7 @@
 }
 
 .attachment {
-  padding-top: 12px;
-  margin-left: auto;
+  margin-bottom: 60px;
 }
 
 .attachment__text {
