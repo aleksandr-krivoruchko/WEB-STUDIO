@@ -24,15 +24,11 @@
   <body>
     <!--                                                !ШАПКА                                                  -->
 
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__main-nav container">
         <nav class="header__site-nav">
-          <a
-            href=""
-            lang="en"
-            class="logo header__logo animate__animated animate__heartBeat"
-            ><span class="logo__text">Web</span>Studio</a
-          >
+          <a href="" lang="en" class="logo header__logo animate__animated animate__heartBeat"><span
+              class="logo__text">Web</span>Studio</a>
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a class="site-nav__link current" href="./index.html">Студия</a>
@@ -46,58 +42,58 @@
           </ul>
         </nav>
         <div class="contacts">
-          <a
-            class="site-nav__link site-nav__link--text-color contacts__link"
-            href="mailto:info@devstudio.com"
-            ><svg class="site-nav__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
-          >
-          <a
-            class="site-nav__link site-nav__link--text-color"
-            href="tel:+380961111111"
-            ><svg class="site-nav__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use></svg
-            >+38 096 111 11 11</a
-          >
+          <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a>
+          <a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
         </div>
-        <button type="button" class="menu-toggle is-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="site-nav__icon-menu" href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
       </div>
-    </header>
+    </header> -->
 
     <!--                                      !СОДЕРЖИМОЕ СТРАНИЦЫ                                              -->
 
     <main>
       <!--   MOBILE MENU   -->
 
-      <div class="menu-container js-menu-container" id="mobile-menu">
+       <div class="menu-container js-menu-container" id="mobile-menu">
         <button type="button" class="menu-toggle is-open js-close-menu">
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="site-nav__icon-close" href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <nav class="menu-container__site-nav site-nav">
-          
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a class="site-nav__link current" href="./index.html">Студия</a>
+        <nav class="menu-container__mob-nav mob-nav">
+          <ul class="mob-nav__list">
+            <li class="mob-nav__item">
+              <a class="mob-nav__link current" href="./index.html">Студия</a>
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+            <li class="mob-nav__item">
+              <a class="mob-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">Контакты</a>
+            <li class="mob-nav__item">
+              <a class="mob-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="menu-container__contacts contacts">
-          <a class="site-nav__link site-nav__link--text-color contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="site-nav__link site-nav__link--text-color" href="tel:+380961111111">+38 096 111 11 11</a>
+        <div class="mob-contacts">
+          <a class="mob-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="mob-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
         </div>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="http://">Instagram</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="http://">Twitter</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="http://">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="http://">Linkedin</a>
+          </li>
+        </ul>
       </div>
 
       <!--   HERO   -->
@@ -113,7 +109,7 @@
 
       <!-- Особенности нашей студии -->
 
-      <section class="features section">
+       <section class="features section">
         <div class="container">
           <h2 class="section__title visually-hidden">Features</h2>
 
@@ -175,7 +171,7 @@
 
       <!-- Чем мы занимаемся -->
 
-      <section class="work section">
+       <section class="work section">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
 
@@ -224,7 +220,7 @@
 
       <!-- Наша команда -->
 
-      <section class="team section">
+       <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
@@ -409,7 +405,7 @@
 
       <!-- Постоянные клиенты -->
 
-      <section class="clients section">
+       <section class="clients section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -466,7 +462,7 @@
     </main>
     <!--                                               !ПОДВАЛ                                                   -->
 
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container footer__container">
         <address class="address">
           <a href="" lang="en" class="logo footer__logo"
@@ -622,7 +618,7 @@
           <button type="submit" class="btn form__button">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

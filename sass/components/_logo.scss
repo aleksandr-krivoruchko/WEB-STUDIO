@@ -1,19 +1,21 @@
 .logo {
-  @include text(700, 26px, 1.17, 0.03em, #000000);
+  @include text(700, 24px, 1.17, 0.03em, #000000);
+  padding: 26px 0;
   display: inline-block;
   font-family: "Raleway", sans-serif;
+
+  @media screen and (min-width: 1200px) {
+    @include text(700, 26px, 1.19, 0.03em, #000000);
+  }
 }
 
 .logo__text {
   color: $accent-color;
 }
 
-.header__logo {
-  margin-right: 93px;
-}
-
 .footer__logo {
   margin-bottom: 20px;
   font-style: normal;
   color: #ffffff;
+  padding: 0;
 }

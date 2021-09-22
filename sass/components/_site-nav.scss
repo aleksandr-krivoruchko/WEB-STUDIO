@@ -1,14 +1,21 @@
 .site-nav__list {
-  @extend %flex-center;
+  display: none;
 
-  @media screen and (max-width: 767px) {
-    display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 
 .site-nav__item {
-  margin-left: 50px;
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
@@ -41,14 +48,4 @@
   &.current::after {
     opacity: 1;
   }
-  &--text-color {
-    display: inline-flex;
-    align-items: center;
-    color: $main-text-color;
-    fill: $main-text-color;
-  }
-}
-
-.site-nav__icon {
-  margin-right: 10px;
 }

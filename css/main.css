@@ -35,8 +35,6 @@ a {
 }
 
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
   background: #ffffff;
   color: #757575;
   font-family: "Roboto", sans-serif;
@@ -169,6 +167,12 @@ body {
   margin-bottom: 20px;
   font-style: normal;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav__list {
+    display: block;
+  }
 }
 
 .site-nav__item {
