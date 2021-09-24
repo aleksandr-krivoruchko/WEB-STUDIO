@@ -12,11 +12,16 @@
 
 .work__item {
   position: relative;
+  width: 100%;
   &:not(:last-child) {
     margin-right: $card-set-gap;
   }
 }
 
+.work__image {
+  width: 100%;
+  height: auto;
+}
 .work__label {
   position: absolute;
   top: 100%;

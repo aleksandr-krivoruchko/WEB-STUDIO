@@ -63,6 +63,23 @@
             >+38 096 111 11 11</a
           >
         </div>
+        <button
+          type="button"
+          class="menu-toggle is-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="site-nav__icon-menu"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -82,7 +99,7 @@
             ></use>
           </svg>
         </button>
-        <nav class="menu-container__mob-nav mob-nav">
+        <nav class="mob-nav">
           <ul class="mob-nav__list">
             <li class="mob-nav__item">
               <a class="mob-nav__link" href="./index.html">Студия</a>
@@ -97,29 +114,32 @@
             </li>
           </ul>
         </nav>
-        <div class="mob-contacts">
-          <a class="mob-contacts__link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-          <a class="mob-contacts__link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
+        <div class="wrapper">
+          <div class="mob-contacts">
+            <a class="mob-contacts__link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+            <a class="mob-contacts__link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+          <ul class="mob-social">
+            <li class="mob-social__item">
+              <a class="mob-social__link" href="http://">Instagram</a>
+            </li>
+            <li class="mob-social__item">
+              <a class="mob-social__link" href="http://">Twitter</a>
+            </li>
+            <li class="mob-social__item">
+              <a class="mob-social__link" href="http://">Facebook</a>
+            </li>
+            <li class="mob-social__item">
+              <a class="mob-social__link" href="http://">LinkedIn</a>
+            </li>
+          </ul>
         </div>
-        <ul class="mob-social">
-          <li class="mob-social__item">
-            <a class="mob-social__link" href="http://">Instagram</a>
-          </li>
-          <li class="mob-social__item">
-            <a class="mob-social__link" href="http://">Twitter</a>
-          </li>
-          <li class="mob-social__item">
-            <a class="mob-social__link" href="http://">Facebook</a>
-          </li>
-          <li class="mob-social__item">
-            <a class="mob-social__link" href="http://">LinkedIn</a>
-          </li>
-        </ul>
       </div>
+
       <section class="portfolio section">
         <div class="container">
           <ul class="filter-list portfolio__filter-list">
@@ -174,8 +194,6 @@
                   class="card__image"
                   src="./images/1.jpg"
                   alt="Веб-сайт Технокряк"
-                  width="450"
-                  height="294"
                 />
                 <div class="card__overlay">
                   <p class="card__description">
@@ -197,8 +215,6 @@
                   class="card__image"
                   src="./images/2.jpg"
                   alt="Дизайн постера New Orlean vs Golden Star"
-                  width="450"
-                  height="294"
                 />
                 <div class="card__overlay">
                   <p class="card__description">
@@ -220,8 +236,6 @@
                   class="card__image"
                   src="./images/3.jpg"
                   alt="Приложение ресторана Seafood"
-                  width="450"
-                  height="294"
                 />
                 <div class="card__overlay">
                   <p class="card__description">
@@ -243,8 +257,6 @@
                   class="card__image"
                   src="./images/4.jpg"
                   alt="Маркетинг проекта Prime"
-                  width="450"
-                  height="294"
                 />
                 <div class="card__overlay">
                   <p class="card__description">
@@ -266,8 +278,6 @@
                   class="card__image"
                   src="./images/5.jpg"
                   alt="Приложение проекта Boxes"
-                  width="450"
-                  height="294"
                 />
                 <div class="card__overlay">
                   <p class="card__description">
@@ -289,8 +299,6 @@
                   class="card__image"
                   src="./images/6.jpg"
                   alt="Веб-сайт Inspiration has no Borders"
-                  width="450"
-                  height="294"
                 />
                 <div class="card__overlay">
                   <p class="card__description">
@@ -312,8 +320,6 @@
                   class="card__image"
                   src="./images/7.jpg"
                   alt="Дизайн издания Limited Edition"
-                  width="450"
-                  height="294"
                 />
                 <div class="card__overlay">
                   <p class="card__description">
@@ -335,8 +341,6 @@
                   class="card__image"
                   src="./images/8.jpg"
                   alt="Маркетинг проекта LAB"
-                  width="450"
-                  height="294"
                 />
                 <div class="card__overlay">
                   <p class="card__description">
@@ -358,8 +362,6 @@
                   class="card__image"
                   src="./images/9.jpg"
                   alt="Приложение Growing Business"
-                  width="450"
-                  height="294"
                 />
                 <div class="card__overlay">
                   <p class="card__description">
@@ -468,5 +470,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
