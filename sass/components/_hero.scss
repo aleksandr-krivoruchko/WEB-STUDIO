@@ -1,7 +1,9 @@
 .hero {
   max-width: 1600px;
+  height: auto;
   padding-top: 118px;
   padding-bottom: 118px;
+  margin: 0 auto;
   text-align: center;
   flex-grow: 1;
   background-color: $accent-bg-color;

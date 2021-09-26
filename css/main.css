@@ -289,8 +289,10 @@ body {
 
 .hero {
   max-width: 1600px;
+  height: auto;
   padding-top: 118px;
   padding-bottom: 118px;
+  margin: 0 auto;
   text-align: center;
   flex-grow: 1;
   background-color: #2f303a;
@@ -426,7 +428,8 @@ body {
 }
 
 .work__image {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -497,7 +500,8 @@ body {
 }
 
 .business-card__photo {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -723,7 +727,8 @@ body {
 }
 
 .card__image {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -908,6 +913,7 @@ body {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -929,6 +935,11 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(2);
+}
+@media screen and (orientation: landscape) {
+  .modal {
+    top: 90%;
+  }
 }
 @media screen and (min-width: 480px) {
   .modal {

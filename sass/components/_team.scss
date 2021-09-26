@@ -45,7 +45,8 @@
 }
 
 .business-card__photo {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 

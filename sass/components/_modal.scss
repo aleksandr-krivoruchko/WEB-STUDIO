@@ -8,6 +8,7 @@
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
+  overflow-y: scroll;
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -27,6 +28,10 @@
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(2);
+  }
+
+  @media screen and (orientation: landscape) {
+    top: 90%;
   }
 
   @media screen and (min-width: 480px) {
