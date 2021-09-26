@@ -46,8 +46,8 @@
   position: absolute;
   bottom: 0;
   padding-bottom: 48px;
-  @media screen and (min-width: 540px) {
-    right: 0;
+  @media screen and (orientation: landscape) {
+    right: 15px;
     text-align: right;
   }
 }
@@ -98,6 +98,13 @@
   padding-right: 10px;
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-social__item {
+  @media screen and (max-width: 399px) {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
 }
 
 .mob-social__link {
