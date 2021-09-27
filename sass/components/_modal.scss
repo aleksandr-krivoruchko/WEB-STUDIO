@@ -30,10 +30,6 @@
     transform: translate(-50%, -50%) scale(2);
   }
 
-  @media screen and (orientation: landscape) {
-    top: 90%;
-  }
-
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 609px;
