@@ -1,1 +1,1 @@
-# goit-markup-hw-08
+#Mobile-first adaptive landing page web studio
